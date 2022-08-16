@@ -1,7 +1,5 @@
 require 'watir'
 require '../BurgerKing/Pages/common'
-require '../BurgerKing/Base/Locator'
-require '../BurgerKing/Assertions/Compare.rb'
 include Test::Unit::Assertions
 
 
