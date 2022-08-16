@@ -7,7 +7,7 @@ Dado('estar na home {string}') do |site|
 end
   
 Quando('clicar no menu {string}') do |menu|
-    sleep 2
+    sleep 3
     if menu.include?('Delivery')
         Common.clica_link_text(menu)
         sleep 2
