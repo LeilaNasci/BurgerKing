@@ -1,9 +1,8 @@
 require 'watir'
 require '../BurgerKing/Pages/common'
-include Test::Unit::Assertions
 
-Dado('estar na home {string}') do |site|
-    $browser.goto(site)
+Dado('estar na home {string}') do |url|
+    $browser.goto(url)
 end
   
 Quando('clicar no menu {string}') do |menu|
@@ -27,5 +26,7 @@ Então('validar titulo {string}') do |titulo|
 end
 
 Quando('clicar no botão {string}') do |button|
-    Common.clica_link_text(button)
+    sleep 5
+    $browser.button(text: button).click
 end
+

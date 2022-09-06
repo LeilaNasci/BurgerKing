@@ -1,18 +1,10 @@
 require 'watir'
 
-class Common
+module Common
 
   # def initialize(browser)
   #   @browser=browser
   # end
-
-  def Common.preenche_campo(txt, tipo, locator)
-    if tipo='id'
-      $browser.text_field(id: locator).set txt
-    elsif tipo='name'
-      $browser.text_field(name: locator).set txt
-    end
-  end
 
   def Common.clica_link(locator)
     $browser.link(locator).click

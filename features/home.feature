@@ -26,6 +26,17 @@ E validar titulo 'Burger King®'
 @CliqueRetire
 Cenario: Validar clique e retire
 Dado estar na home 'https://burgerking.com.br'
-Quando clicar no botão "Clique e Retire"
+Quando clicar no botão clique e retire
 Então validar url "https://burgerking.com.br/app-bk"
+
+@Delivery @LojaProxima
+Cenario: Valida loja próxima
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+E preencher o endereço "rua bento fernandes - campo limpo"
+E seleciona o endereço
+E preencher o numero '15'
+E clicar no botão usar endereço
+Então valida loja 'Burger King - Campo Limpo Shopping'
+
 
