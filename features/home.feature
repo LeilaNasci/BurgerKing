@@ -55,3 +55,4 @@ E preencher o numero '15'
 E clicar no botão usar endereço
 Quando clicar em ClubeBK
 Então validar título 'O Clube Bk é um clube de recompensas gratuito, todinho seu <3'
+
