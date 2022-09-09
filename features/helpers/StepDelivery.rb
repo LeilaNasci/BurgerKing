@@ -39,3 +39,4 @@ end
 Quando('clicar no botão Adicionar') do
   $browser.button(class: 'sc-kDDrLX bsxSTu sc-29a74f8b-7 fuiTEV').click
 end
+
