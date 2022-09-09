@@ -39,4 +39,19 @@ E preencher o numero '15'
 E clicar no botão usar endereço
 Então valida loja 'Burger King - Campo Limpo Shopping'
 
+@Delivery @TituloBusca
+Cenario: Valida título buscar endereço
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+Então validar título 'Buscar endereço'
 
+@Delivery @TextoClubeBK
+Cenario: Valida texto Clube BK
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+E preencher o endereço "rua bento fernandes - campo limpo"
+E seleciona o endereço
+E preencher o numero '15'
+E clicar no botão usar endereço
+Quando clicar em ClubeBK
+Então validar título 'O Clube Bk é um clube de recompensas gratuito, todinho seu <3'

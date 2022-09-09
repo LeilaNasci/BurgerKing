@@ -26,3 +26,17 @@ Então('valida loja {string}') do |loja|
   assert $browser.element(text: 'Burger King - Campo Limpo Shopping').text.include?(loja)
 end
 
+Então('validar título {string}') do |titulo| 
+  sleep(5)
+  assert $browser.element(text: titulo).text.include?(titulo)
+end
+
+Quando('clicar em ClubeBK') do
+  sleep(2)
+  $browser.element(class: 'sc-bczRLJ sc-f719e9b0-0 sc-de312e94-4 hJJyHP dbeope eyvSCE').click
+end
+
+Quando('clicar no botão Adicionar') do
+  $browser.button(class: 'sc-kDDrLX bsxSTu sc-29a74f8b-7 fuiTEV').click
+end
+
