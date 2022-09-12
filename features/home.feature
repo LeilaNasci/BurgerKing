@@ -76,11 +76,13 @@ Então validar título 'Sacola'
 Cenario: Valida título como pagar
 Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
 Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "Rua Alexandre Dumas"
+E preencher o endereço "Rua Doutor Renato Paes de Barros"
 E seleciona o endereço
-E preencher o numero '2016'
+E preencher o numero '100'
 E clicar no botão usar endereço
+E clicar no botão Lancamento
 Quando clicar em 2 CBK
 E clicar no botão Adicionar
+E clicar no botão Ver sacola
 E clicar no botão Escolher
 Então validar título 'Como quer pagar?'

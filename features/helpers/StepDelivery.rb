@@ -66,12 +66,21 @@ Quando('seleciona a opção para incrementar o pedido') do
 end
 
 Quando('clicar em 2 CBK') do
-  sleep(10)
+  sleep(2)
   $browser.element(class: 'sc-bczRLJ sc-f719e9b0-0 iulJrM dbeope').click
 end
 
 Quando('clicar no botão Escolher') do
+  sleep(2)
   $browser.button(class: 'sc-kDDrLX bJQOCn sc-5a75d9e7-2 fUsreu').click
+end
+
+Quando('clicar no botão Lancamento') do
+  $browser.button(text: 'Lançamentos').click
+end
+
+Quando('clicar no botão Ver sacola') do
+  $browser.button(class: 'sc-bf402f79-0 jZPdJK').click
 end
 
 
