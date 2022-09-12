@@ -72,3 +72,14 @@ E seleciona a opção para incrementar o pedido
 Quando clicar no botão Adicionar
 Então validar título 'Sacola'
 
+@Delivery @TextoComoPagar
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+E preencher o endereço "Rua Alexandre Dumas"
+E seleciona o endereço
+E preencher o numero '2016'
+E clicar no botão usar endereço
+Quando clicar em 2 CBK
+E clicar no botão Adicionar
+E clicar no botão Escolher
+Então validar título 'Como quer pagar?'
