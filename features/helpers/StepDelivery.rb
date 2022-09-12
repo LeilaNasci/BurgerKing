@@ -23,7 +23,7 @@ Quando('clicar no botão usar endereço') do
 end
 
 Então('valida loja {string}') do |loja|
-  assert $browser.element(text: 'Burger King - Campo Limpo Shopping').text.include?(loja)
+  assert $browser.element(text: 'Burger King - Helio Pelegrino').text.include?(loja)
 end
 
 Então('validar título {string}') do |titulo| 
@@ -81,6 +81,23 @@ end
 
 Quando('clicar no botão Ver sacola') do
   $browser.button(class: 'sc-bf402f79-0 jZPdJK').click
+end
+
+Quando('clicar em Shake Oreo Chocolate') do
+  $browser.element(text: 'Shake Oreo Chocolate').click
+end
+
+Quando('clicar no botão Pix') do
+  $browser.button(class: 'sc-kDDrLX duvFmM sc-c046c03-2 beKKlE').click
+end
+
+Quando('preencher o numero do celular {string}') do |numero|
+  sleep(5)
+  $browser.text_field(id: 'phone_number').set numero
+end
+
+Então('clicar no botão Receber pelo Whatsapp') do
+  $browser.element(text: 'Receber pelo WhatsApp').click
 end
 
 

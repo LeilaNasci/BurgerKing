@@ -29,78 +29,8 @@ Dado estar na home 'https://burgerking.com.br'
 Quando clicar no botão clique e retire
 Então validar url "https://burgerking.com.br/app-bk"
 
-@Delivery @LojaProxima
-Cenario: Valida loja próxima
-Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
-Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "rua bento fernandes - campo limpo"
-E seleciona o endereço
-E preencher o numero '15'
-E clicar no botão usar endereço
-Então valida loja 'Burger King - Campo Limpo Shopping'
-
 @Delivery @TituloBusca
 Cenario: Valida título buscar endereço
 Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
 Quando clicar no botão "Digitar meu endereço"
 Então validar título 'Buscar endereço'
-
-@Delivery @TextoClubeBK
-Cenario: Valida texto Clube BK
-Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
-Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "rua bento fernandes - campo limpo"
-E seleciona o endereço
-E preencher o numero '15'
-E clicar no botão usar endereço
-Quando clicar em ClubeBK
-Então validar título 'O Clube Bk é um clube de recompensas gratuito, todinho seu <3'
-
-@Delivery @TextoVerSacola
-Cenario: Valida ver sacola
-Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
-Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "Rua Henrique Brammer Netto"
-E seleciona o endereço
-E preencher o numero '50'
-E clicar no botão usar endereço
-Quando clicar em combo CBK
-E seleciona o acompanhamento desejado
-E seleciona a bebida de sua preferência
-E escolhe se quer acrescentar BK mix
-E seleciona a opção para incrementar o pedido
-Quando clicar no botão Adicionar
-Então validar título 'Sacola'
-
-@Delivery @TextoComoPagar
-Cenario: Valida título como pagar
-Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
-Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "Rua Doutor Renato Paes de Barros"
-E seleciona o endereço
-E preencher o numero '100'
-E clicar no botão usar endereço
-E clicar no botão Lancamento
-Quando clicar em 2 CBK
-E clicar no botão Adicionar
-E clicar no botão Ver sacola
-E clicar no botão Escolher
-Então validar título 'Como quer pagar?'
-
-@Delivery @ReceberPeloWhatsapp
-Cenario: Valida receber pelo whatsapp
-Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
-Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "Rua Doutor Renato Paes de Barros"
-E seleciona o endereço
-E preencher o numero '100'
-E clicar no botão usar endereço
-E clicar no botão Lancamento
-Quando clicar em 2 CBK
-E clicar no botão Adicionar
-E clicar no botão Ver sacola
-E clicar no botão Escolher
-Então validar título 'Como quer pagar?'
-Quando clica em Pix
-E preenche o campo com o número do celular
-Então clica em Receber pelo Whatsapp
