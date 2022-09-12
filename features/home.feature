@@ -73,6 +73,7 @@ Quando clicar no botão Adicionar
 Então validar título 'Sacola'
 
 @Delivery @TextoComoPagar
+Cenario: Valida título como pagar
 Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
 Quando clicar no botão "Digitar meu endereço"
 E preencher o endereço "Rua Alexandre Dumas"

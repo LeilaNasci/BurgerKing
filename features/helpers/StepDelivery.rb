@@ -65,5 +65,14 @@ Quando('seleciona a opção para incrementar o pedido') do
   $browser.element(text: 'Bk cheddar').click
 end
 
+Quando('clicar em 2 CBK') do
+  sleep(10)
+  $browser.element(class: 'sc-bczRLJ sc-f719e9b0-0 iulJrM dbeope').click
+end
+
+Quando('clicar no botão Escolher') do
+  $browser.button(class: 'sc-kDDrLX bJQOCn sc-5a75d9e7-2 fUsreu').click
+end
+
 
 
