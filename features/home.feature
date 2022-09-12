@@ -55,3 +55,20 @@ E preencher o numero '15'
 E clicar no botão usar endereço
 Quando clicar em ClubeBK
 Então validar título 'O Clube Bk é um clube de recompensas gratuito, todinho seu <3'
+
+@Delivery @TextoVerSacola
+Cenario: Valida ver sacola
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+E preencher o endereço "Rua Henrique Brammer Netto"
+E seleciona o endereço
+E preencher o numero '50'
+E clicar no botão usar endereço
+Quando clicar em combo CBK
+E seleciona o acompanhamento desejado
+E seleciona a bebida de sua preferência
+E escolhe se quer acrescentar BK mix
+E seleciona a opção para incrementar o pedido
+Quando clicar no botão Adicionar
+Então validar título 'Sacola'
+
