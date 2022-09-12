@@ -86,3 +86,21 @@ E clicar no botão Adicionar
 E clicar no botão Ver sacola
 E clicar no botão Escolher
 Então validar título 'Como quer pagar?'
+
+@Delivery @ReceberPeloWhatsapp
+Cenario: Valida receber pelo whatsapp
+Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
+Quando clicar no botão "Digitar meu endereço"
+E preencher o endereço "Rua Doutor Renato Paes de Barros"
+E seleciona o endereço
+E preencher o numero '100'
+E clicar no botão usar endereço
+E clicar no botão Lancamento
+Quando clicar em 2 CBK
+E clicar no botão Adicionar
+E clicar no botão Ver sacola
+E clicar no botão Escolher
+Então validar título 'Como quer pagar?'
+Quando clica em Pix
+E preenche o campo com o número do celular
+Então clica em Receber pelo Whatsapp
