@@ -5,14 +5,14 @@ Funcionalidade: Delivery
 Contexto:
 Dado estar no site do delivery 'https://delivery.burgerking.com.br/'
 Quando clicar no botão "Digitar meu endereço"
-E preencher o endereço "Rua Doutor Renato Paes de Barros"
+E preencher o endereço "Praça Nicolau Aranha Pacheco"
 E seleciona o endereço
 E preencher o numero '100'
 E clicar no botão usar endereço
 
 @Delivery @LojaProxima
 Cenario: Valida loja próxima
-Então valida loja 'Burger King - Helio Pelegrino'
+Então valida loja 'Burger King - Interlagos'
 
 @Delivery @TextoClubeBK
 Cenario: Valida texto Clube BK
@@ -48,4 +48,4 @@ E clicar no botão Escolher
 Quando clicar no botão Pix
 E preencher o numero do celular '11909089890'
 Então clicar no botão Receber pelo Whatsapp
-#Então validar título 'Digite o código de 6 dígitos que enviamos para '
+Então validar título 'Digite o código de 6 dígitos que enviamos para '

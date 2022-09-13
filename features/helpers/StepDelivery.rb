@@ -42,6 +42,7 @@ Quando('clicar em combo CBK') do
 end
 
 Quando('clicar no botão Adicionar') do
+  sleep(2)
   $browser.button(class: 'sc-kDDrLX bsxSTu sc-29a74f8b-7 fuiTEV').click
 end
 
@@ -50,19 +51,19 @@ Quando('clicar em Adicionar mais itens') do
 end
 
 Quando('seleciona o acompanhamento desejado') do
-  $browser.element(text: 'Onion rings Média').click
+  $browser.label(text: 'Batata Média').click
 end
 
 Quando('seleciona a bebida de sua preferência') do
-  $browser.element(text: 'H2oh Limão - 500 Ml').click
+  $browser.label(text: 'Pepsi Lata - 350 Ml').click
 end
 
 Quando('escolhe se quer acrescentar BK mix') do
-  $browser.element(text: 'Bk Mix Brownie').click
+  $browser.label(text: 'Bk Mix Brownie').click
 end
 
 Quando('seleciona a opção para incrementar o pedido') do
-  $browser.element(text: 'Bk cheddar').click
+  $browser.label(text: 'Cheeseburger').click
 end
 
 Quando('clicar em 2 CBK') do
