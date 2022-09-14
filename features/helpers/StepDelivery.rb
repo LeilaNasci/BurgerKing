@@ -93,7 +93,6 @@ Quando('clicar no botão Pix') do
 end
 
 Quando('preencher o numero do celular {string}') do |numero|
-  sleep(5)
   $browser.text_field(id: 'phone_number').set numero
 end
 
@@ -101,5 +100,35 @@ Então('clicar no botão Receber pelo Whatsapp') do
   $browser.element(text: 'Receber pelo WhatsApp').click
 end
 
+Então('clicar no botão Receber por SMS') do
+  $browser.element(text: 'Receber por SMS').click
+end
 
+Quando('clicar no botão Pagar pelo site') do
+  $browser.button(xpath: '//div[1]/div[3]/div/button[2]').click
+end
 
+Quando('clicar no botão Cadastrar-se') do
+  $browser.button(class: 'sc-kDDrLX bsxSTu sc-41a2afb6-4 fWPFzY').click
+end
+
+Quando('clicar no botão Facebook') do
+  $browser.button(class: 'sc-e02089f7-4 sc-e02089f7-6 jWeUlC cpUytt').click
+end
+
+Quando('clicar no botão Google') do
+  sleep(2)
+  $browser.button(class: 'sc-e02089f7-4 sc-e02089f7-5 jWeUlC elVzO').click
+end
+
+Quando('clicar no botão Email') do
+  $browser.button(class: 'sc-kDDrLX eJhRuI sc-e02089f7-3 jbzlew').click
+end
+
+Quando('E preencher o email {string}') do |email|
+  $browser.text_field(id: 'email').set email
+end
+
+Então('clicar no botão Continuar') do
+  $browser.button(text: 'Continuar').click
+end
