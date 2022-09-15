@@ -132,3 +132,45 @@ end
 Então('clicar no botão Continuar') do
   $browser.button(text: 'Continuar').click
 end
+
+Quando('clicar no botão Entrar com IFood') do
+  $browser.button(class: 'sc-kDDrLX eJhRuI sc-41a2afb6-5 bFPxuU').click
+end
+
+Quando('clicar no botão Limpar') do
+  $browser.button(class: 'sc-kDDrLX bJQOCn sc-cf2835ca-9 iakMEW').click
+end
+
+Então('validar toast alert {string}') do |string|
+  sleep(5)
+  assert $browser.element(text: string).text.include?(string)
+end
+
+Quando('clicar no botão Trocar') do
+  $browser.element(class: 'sc-bjUoiL jNWqbK sc-ecbf8c8a-0 sc-bbf0dca1-0 sc-2e0345ac-3 mULYS gjoDPY frdAyc').click
+end
+
+Quando('clicar no botão Aplicar') do
+  $browser.element(class: 'sc-duzrYq kOylQJ').click
+end
+
+Quando('clicar no botão Aplicar entrega grátis') do
+  $browser.element(class: 'sc-kDDrLX bJQOCn sc-d1e652cf-6 cCYigW').click
+end
+
+Quando('clicar no botão Bk Lovers') do
+  $browser.button(text: 'Bk Lovers').click
+end
+
+Quando('clicar em Todo Dia a partir de R$10,90') do
+  sleep(2)
+  $browser.element(xpath: '//div[9]/div/div[2]/button[2]').click
+end
+
+Quando('seleciona o sanduiche') do
+  $browser.label(text: 'Chicken Duplo').click
+end
+
+Quando('seleciona a opção de incrementar') do
+  $browser.label(text: 'Hoje não!').click
+end
